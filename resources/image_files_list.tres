@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="ImageFilesListResource" load_steps=2 format=3 uid="uid://c247liuugq4ph"]
+
+[ext_resource type="Script" uid="uid://btvhh7oxovtgb" path="res://classes/image_files_list_resource.gd" id="1_61nnb"]
+
+[resource]
+script = ExtResource("1_61nnb")
+file_names = Array[String](["res://assets/animals/bear.png", "res://assets/animals/buffalo.png", "res://assets/animals/chick.png", "res://assets/animals/chicken.png", "res://assets/animals/cow.png", "res://assets/animals/crocodile.png", "res://assets/animals/dog.png", "res://assets/animals/duck.png", "res://assets/animals/elephant.png", "res://assets/animals/frog.png", "res://assets/animals/giraffe.png", "res://assets/animals/goat.png", "res://assets/animals/gorilla.png", "res://assets/animals/hippo.png", "res://assets/animals/horse.png", "res://assets/animals/monkey.png", "res://assets/animals/moose.png", "res://assets/animals/narwhal.png", "res://assets/animals/owl.png", "res://assets/animals/panda.png", "res://assets/animals/parrot.png", "res://assets/animals/penguin.png", "res://assets/animals/pig.png", "res://assets/animals/rabbit.png", "res://assets/animals/rhino.png", "res://assets/animals/sloth.png", "res://assets/animals/snake.png", "res://assets/animals/walrus.png", "res://assets/animals/whale.png", "res://assets/animals/zebra.png"])

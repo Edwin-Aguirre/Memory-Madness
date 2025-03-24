@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c453samaygkle"]
+[gd_scene load_steps=3 format=3 uid="uid://c453samaygkle"]
 
 [ext_resource type="Texture2D" uid="uid://bq3kchwh1ins2" path="res://assets/images/backgroundEmpty.png" id="1_aynem"]
+[ext_resource type="Script" uid="uid://cvproe381plna" path="res://scripts/master.gd" id="1_jooxx"]
 
 [node name="Master" type="Control"]
 layout_mode = 3
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_jooxx")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
