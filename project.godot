@@ -11,8 +11,22 @@ config_version=5
 [application]
 
 config/name="Memory Madness"
+config/tags=PackedStringArray("udemy")
+run/main_scene="uid://c453samaygkle"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+SignalHub="*res://globals/signal_hub.gd"
+ImageManager="*res://globals/image_manager.gd"
+SoundManager="*res://globals/sound_manager.gd"
+
+[display]
+
+window/size/viewport_width=1024
+window/size/viewport_height=768
+window/stretch/mode="canvas_items"
 
 [rendering]
 
