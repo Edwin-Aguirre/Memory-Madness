@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://b8wwom86qpvql"]
 
-[ext_resource type="Texture2D" uid="uid://b8ar7re5q1jqn" path="res://assets/ui/button_square_depth_line.png" id="1_6g3el"]
-[ext_resource type="Texture2D" uid="uid://cxt01weahqwsw" path="res://assets/ui/button_square_gradient.png" id="2_ium1h"]
-[ext_resource type="Texture2D" uid="uid://dkfbvh04dc1pq" path="res://assets/ui/button_square_depth_gradient.png" id="3_nfgsp"]
+[ext_resource type="Texture2D" uid="uid://m8l8f58b5tg" path="res://assets/ui/button_square_depth_border.png" id="1_ium1h"]
+[ext_resource type="Texture2D" uid="uid://ds7n0ad2ki6e5" path="res://assets/ui/button_square_flat.png" id="2_nfgsp"]
+[ext_resource type="Texture2D" uid="uid://b7cli6dgakk0c" path="res://assets/ui/button_square_depth_flat.png" id="3_b0rp6"]
 [ext_resource type="LabelSettings" uid="uid://bmatwkmjeihfy" path="res://resources/button_text.tres" id="4_6g3el"]
 [ext_resource type="Script" uid="uid://cj6jwn1w66oup" path="res://scripts/level_button.gd" id="4_ium1h"]
 
@@ -18,9 +18,9 @@ offset_right = 20.0
 offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
-texture_normal = ExtResource("1_6g3el")
-texture_pressed = ExtResource("2_ium1h")
-texture_hover = ExtResource("3_nfgsp")
+texture_normal = ExtResource("1_ium1h")
+texture_pressed = ExtResource("2_nfgsp")
+texture_hover = ExtResource("3_b0rp6")
 script = ExtResource("4_ium1h")
 
 [node name="Label" type="Label" parent="."]

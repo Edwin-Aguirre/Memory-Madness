@@ -28,7 +28,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 72
 
 [node name="Spacer4" type="Control" parent="VBoxContainer"]
 layout_mode = 2
@@ -48,7 +47,7 @@ size_flags_vertical = 3
 [node name="HBLevelButtons" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_constants/separation = 24
+theme_override_constants/separation = 25
 
 [node name="LevelButton" parent="VBoxContainer/HBLevelButtons" instance=ExtResource("2_0wfyh")]
 layout_mode = 2

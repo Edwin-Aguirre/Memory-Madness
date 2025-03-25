@@ -27,6 +27,8 @@ SoundManager="*res://globals/sound_manager.gd"
 window/size/viewport_width=1024
 window/size/viewport_height=768
 window/stretch/mode="canvas_items"
+mouse_cursor/custom_image="uid://b5xv8s6rqqc2v"
+mouse_cursor/custom_image_hotspot=Vector2(20, 20)
 
 [rendering]
 
