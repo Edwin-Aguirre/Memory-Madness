@@ -17,4 +17,4 @@ func _ready() -> void:
 
 
 func _on_pressed() -> void:
-	pass # Replace with function body.
+	SignalHub.emit_on_level_selected(level_number)
