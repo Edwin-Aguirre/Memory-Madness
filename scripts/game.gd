@@ -2,7 +2,14 @@ extends Control
 
 
 @onready var tile_grid: GridContainer = $HB/TileGrid
+@onready var sound: AudioStreamPlayer = $Sound
+@onready var scorer: Scorer = $Scorer
+@onready var moves_label: Label = $HB/MC/VB/HB/MovesLabel
+@onready var pairs_label: Label = $HB/MC/VB/HB2/PairsLabel
+
+
 const MEMORY_TILE = preload("res://scenes/memory_tile.tscn")
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -11,6 +18,11 @@ func _ready() -> void:
 
 func _enter_tree() -> void:
 	SignalHub.on_level_selected.connect(on_level_selected)
+
+
+func _process(_delta: float) -> void:
+	moves_label.text = scorer.get_moves_made_str()
+	pairs_label.text = scorer.get_pairs_made_str()
 
 
 func add_memory_tile(image: Texture2D) -> void:
@@ -26,10 +38,12 @@ func on_level_selected(level_num: int) -> void:
 	
 	for im in lds.get_selected_images():
 		add_memory_tile(im)
+		
+	scorer.clear_new_game(lds.get_target_pairs())
 
 
 func _on_exit_button_pressed() -> void:
 	for t in tile_grid.get_children():
 		t.queue_free()
-	
+	SoundManager.play_button_click(sound)
 	SignalHub.emit_on_game_exit_pressed()

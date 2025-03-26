@@ -22,4 +22,5 @@ func get_level_number() -> int:
 
 
 func get_target_pairs() -> int:
+	@warning_ignore("integer_division")
 	return (rows * cols) / 2
