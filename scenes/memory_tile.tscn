@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://biq8ek3gbqqe7"]
+
+[ext_resource type="Texture2D" uid="uid://cm2s500xrmuul" path="res://assets/ui/check_square_color.png" id="1_ih3ta"]
+[ext_resource type="Script" uid="uid://c466sfn5fmj1v" path="res://scripts/memory_tile.gd" id="2_agve2"]
+[ext_resource type="Texture2D" uid="uid://cv7qb3ti3xpx2" path="res://assets/animals/bear.png" id="2_pss2c"]
+
+[node name="MemoryTile" type="TextureButton"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(32, 32)
+texture_normal = ExtResource("1_ih3ta")
+script = ExtResource("2_agve2")
+
+[node name="ItemImage" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_pss2c")
+expand_mode = 1
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
