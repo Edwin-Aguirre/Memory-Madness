@@ -22,7 +22,7 @@ const SOUNDS: Dictionary[String, AudioStream] = {
 func play_sound(player: AudioStreamPlayer, key: String) -> void:
 	if SOUNDS.has(key) == false:
 		return
-		
+	player.volume_db = -15
 	player.stop()
 	player.stream = SOUNDS[key]
 	player.play()
